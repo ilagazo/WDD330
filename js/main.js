@@ -1,6 +1,6 @@
 var menuArray = [
-    {label: "Week01 Notes", url:"/Week01/index.html"},
-    {label: "Week02 Notes", url:"/Week02/index.html"}
+    {label: "Week01 Notes", url:"../WDD330/Week01/index.html"},
+    {label: "Week02 Notes", url:"../WDD330/Week02/index.html"}
 ]
 
 function dynamicTableLoader() {
