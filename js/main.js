@@ -1,12 +1,14 @@
-const links = [
-    {label: "Week1 notes",url:"../WDD330/Week01/index.html"}
+var menuArray = [
+    {label: "Week01 Notes", url:"/Week01/index.html"},
+    {label: "Week02 Notes", url:"/Week02/index.html"}
 ]
 
-function arrayLinkReader() {
-    var display;
-
-    for (i in links) {
-        display = "<li><a href=\"" + links[i].url + "\">" + links[i].label + "</a></li>";
+function dynamicTableLoader() {
+    var display = "";
+    var i;
+    // FOR loop to loop through array and display the content in a <li> tag
+    for (i in menuArray) {
+        display += "<li><a href=\"" + menuArray[i].url + "\">" + menuArray[i].label + "</a></li>";
     }
-    document.getElementsById("arrayLink").innerHTML = display;
+        document.getElementById("arrayLink").innerHTML = display;
 }
