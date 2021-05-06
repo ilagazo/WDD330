@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="../WDD330/css/main.css"> -->
+  <link rel="stylesheet" type="text/css" href="https://ilagazo.github.io/WDD330/css/week01.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@900&display=swap" rel="stylesheet">
+  <title>Week 03 Notes</title>
+</head>
+
+<body>
+  <header>
+    <h1>Week 03 Notes</h1>
+  </header>
+  <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"></script>
+
+  <div class="notes">
+    <h2>JavaScript: Novice to Ninja, 2nd Edition & "THIS"</h2>
+    <div class="notes-sub">
+      <h3>Object methods, "this"</h3>
+      <ul>
+        <li>A function that is a property of an object is called its method.</li>
+        <li>When we write our code using objects to represent entities, that’s called object-oriented programming, in
+          short: “OOP”.</li>
+        <li>Shorthand Notation: // method shorthand looks better, right?
+          user = {
+          sayHi() { // same as "sayHi: function(){...}"
+          alert("Hello");
+          }
+          };</li>
+        <li>It’s common that an object method needs to access the information stored in the object to do its job.
+          For instance, the code inside user.sayHi() may need the name of the user.
+          To access the object, a method can use the this keyword.</li>
+        <li>THIS is not bound.In JavaScript, keyword this behaves unlike most other programming languages. It can be
+          used in any function, even if it’s not a method of an object. </li>
+        <li>The value of this is defined at run-time.
+          When a function is declared, it may use this, but that this has no value until the function is called.
+          A function can be copied between objects.
+          When a function is called in the “method” syntax: object.method(), the value of this during the call is
+          object.</li>
+        <li></li>
+      </ul>
+    </div>
+    <div class="notes-sub">
+      <h3>This in JavaScript</h3>
+      <ul>
+        <li>this is a keyword whose value changes depending on how a function gets called. There six different ways where this can take on new values. </li>
+        <li>This in a global context: When this is called outside of any function, in a global context, this defaults to the Window object in the browser.</li>
+        <li>This in object construction: When you create a new instance of an object with the new keyword, this refers to the instance. </li>
+        <li>This in an object method: this within any method refers to the object itself. Since this refers to the object, you can use methods to get the instance of an object</li>
+        <li>This in a simple function: On browsers, this is always set to Window in a simple function.</li>
+        <li>This in arrow functions: this in an arrow function is always the same as this around it (in its immediate scope). So, if you use arrow functions within an object method, the this context stays as the object, not Window.</li>
+        <li>This in event listeners: this is set to the element that fired the event in an event listener</li>
+      </ul>
+    </div>
+  
+    </div>
+
+    <footer>
+      <p>Professional Networking Links:</p>
+      <div class="footer-links">
+        <a href="https://www.linkedin.com/in/ivanro-lagazo/">LinkedIn</a>
+        <a href="https://github.com/ilagazo">GitHub</a>
+        <a href="../WDD330/index.html">Portfolio</a>
+      </div>
+    </footer>
+</body>
+
+</html>
