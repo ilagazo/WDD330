@@ -70,7 +70,7 @@ nav a:hover {
 }
 
 .card::after {
-    content: 'Mikes ';
+    content: 'Mike\'s';
     position: absolute;
     bottom: 0;
     left: 0;
