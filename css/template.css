@@ -19,7 +19,7 @@ header {
 
 nav {
     display: flex;
-   flex-flow: row no;
+   flex-flow: row wrap;
    justify-content: center;
    align-items: center;
    justify-content: space-evenly;
@@ -27,7 +27,7 @@ nav {
    background-color: #d8e3e7;
 }
 
-nav a{
+nav a {
    text-decoration: none; 
    font-size: 25px;
    color: black;
@@ -149,4 +149,5 @@ footer {
     background-color: black;
     padding: 20px;
     color: #fff;
+    text-align: center;
 }
