@@ -81,8 +81,46 @@
          <li>3. Functions are not permitted values</li>
       </ul>
     </div>
+    <div class="notes-sub">
+      <h3>Ch6: Document Object Model</h3>
+      <ul>
+        <li>The Document Object Model, or DOM for short, represents an HTML document as a network of connected nodes that form a tree-like structure.</li>
+        <li>The DOM treats everything on a web page as a node. HTML tags, the text inside these tags, even the attributes of a tag are all nodes. The HTML tag is the root node, and every other part of the document is a child node of this.</li>
+        <li>The DOM provides several methods that allow us to access any element on a page. These methods will return a node object or a node list, which is an array-like object. These objects can then be assigned to a variable and be inspected or modified.</li>
+        <li>All nodes have a numerical code to signify what type they are. (i.e. 1 = element, 2 = attribute, etc.</li>
+        <li>We can access elements by their tag or class name</li>
+        <li>The document.querySelector() method allows you to use CSS notation to find thefirstelement in the document that matches that matches a CSS selector provided as an argument. If no elements match, it will return null .</li>
+        <li>CSS query selectors are a powerful way of specifying very precise items on a page.</li>'
+        <li>jQuery is a popular JavaScript framework that makes it very easy to find elements on a page using a CSS-style syntax. </li>
+        <li>Use nodeValue and textContent to find the value of text in a tag</li>
+      </ul>
+    </div>
+    <div class="notes-sub">
+      <h3>Ch7: Events</h3>
+      <ul>
+        <li>When using events, callback functions are usally used to ensure any other code runs while an event is listened to</li>
+        <li>There are a variety of ways to find the position of where a mouse event occurs.The screenX and screenY properties show the number of pixels from the left and top of the screen respectively where the event took place.
+          The clientX and clientY properties show the number of pixels from the left and top of the client that is being used (usually the browser window).The pageX and pageY properties show the number of pixels from the left and top, 
+          respectively, where the event took place in thedocument. This property takes account of whether the page has been scrolled.</li>
+        <li>Events are used to track when a user clicks, scrolls, keys down or up, etc.</li>
+        <li>Event Propagation: When you click on an element, you are actually clicking on all the elements it’s nested inside of. For example, clicking an li tag will also click the ul, body, and html tags as well.</li>
+        <li>Two forms of event propagation: bubbling and capturing.</li>
+        <li>Bubbling: Bubbling is when the event fires on the element clicked on first, then bubbles up the document tree, firing an event on each parent element until it reaches the root node.</li>
+        <li>Capturing: Capturing starts by firing an event on the root element, then propagates downwards, firing an event on each child element until it reaches the target element that was clicked on.</li>
+        <li>The addEventListener() method has a third parameter, which is a boolean value that specifies whether capturing should be used or not. It defaults to false , which is why bubbling happens by default. 
+          There may be instances when you would rather capture the events instead; for example, you might want events on outer elements to fire before any events fire on the element that was actually clicked on.</li>
+        <li>The bubble phase can be stopped from occurring by adding the event.stopPropagation() method into the callback function. </li>
+        <li>Event delegation can be used to attach an event listener to a parent element in order to capture events that are triggered by its child elements.</li>
+    </div>
+    <div class="notes-sub">
+      <h3>Questions:</h3>
+      <ul>
+        <li>How can events be used for e-commerce marketing purposes?</li>
+        <li>When is Capturing useful from bubbling?</li>
+        <li>.value vs .nodeValue? Is there a difference?</li>
+      </ul>
+    </div>
   </div>
-
     <footer>
       <p>Professional Networking Links:</p>
       <div class="footer-links">
