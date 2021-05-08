@@ -12,20 +12,3 @@ function dynamicTableLoader() {
     }
         document.getElementById("arrayLink").innerHTML = display;
 }
-
- $(document).ready(function(){
-    $(".slider").owlCarousel({
-        center: true,
-        autoWidth: true,
-        loop: true,
-        nav: true,
-        navSpeed: 1500,
-        autoplay: true,
-        autoplaySpeed: 1500,
-        autoplayTimeout: 3000,
-    });
-
-    $(".owl-prev").html('<i class="fa fa-chevron-left"></i>');
-    $(".owl-next").html('<i class="fa fa-chevron-right"></i>');
-
-});

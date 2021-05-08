@@ -8,20 +8,9 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     
-    <!-- Personal CSS -->
+    <!-- Personal CSS & JS-->
     <link rel="stylesheet" href="../WDD330/css/main.css">
-
-    <!-- Owl Carousel CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" />
-
-    <!-- Owl Carousel JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
     <script src="../WDD330/js/main.js"></script>
-
-    <!-- Font Awesome 4.7.0 -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" />
-    <title>WDD 330 Portfolio Homepage</title>
   </head>
   <body onload="dynamicTableLoader()">
     <header>
@@ -30,11 +19,7 @@
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-    <script src="/js/main.js"></script>
-
-    <!-- Owl Carousel JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
-
+    <script src="../WDD330/js/main.js"></script>
     <!-- Skills Bar Slider -->
     <h2>Skills</h2>
     <div class="slider-wrap">
@@ -63,34 +48,41 @@
         <span></span>
       </div>
     </div>
-
      <!-- Menu -->
      <div class="menu">
       <h3>WDD 330 Class Notes</h3>
       <ol id="arrayLink"></ol>
     </div>
-
-    <!-- Card Slider -->
-    <div class="slider owl-carousel">
-      <div class="item">
-        <img src="https://ilagazo.github.io/WDD330/assests/Mountains.jpg" alt="">
-        <div class="slider-caption">
-          <h4>TBD</h4>
-          <p>Project Card #1</p>
+    <!-- Project Cards -->
+    <div class="card_container">
+      <div class="card">
+        <div class="img-container">
+          <img src="../WDD330/assests/Mountains.jpg" alt="Mountains" />
+        </div>
+        <div class="label">
+          <h3>Project 1</h3>
+          <h2 class="content_text">E-commerce Site</h2>
+          <a href="#" class="card_button">View</a>
         </div>
       </div>
-      <div class="item">
-        <img src="https://ilagazo.github.io/WDD330/assests/Mountains.jpg" alt="">
-        <div class="slider-caption">
-          <h4>TBD</h4>
-          <p>Project Card #2</p>
+      <div class="card">
+        <div class="img-container">
+          <img src="../WDD330/assests/Mountains.jpg" alt="Mountains" />
+        </div>
+        <div class="label">
+          <h3>Project 2</h3>
+          <h2 class="content_text">Mobile Application</h2>
+          <a href="#" class="card_button">View</a>
         </div>
       </div>
-      <div class="item">
-        <img src="https://ilagazo.github.io/WDD330/assests/Mountains.jpg" alt="">
-        <div class="slider-caption">
-          <h4>TBD</h4>
-          <p>Project Card #3</p>
+      <div class="card">
+        <div class="img-container">
+          <img src="../WDD330/assests/Mountains.jpg" alt="Mountains" />
+        </div>
+        <div class="label">
+          <h3>Project 3</h3>
+          <h2 class="content_text">Tic Tac Toe</h2>
+          <a href="#" class="card_button">View</a>
         </div>
       </div>
     </div>

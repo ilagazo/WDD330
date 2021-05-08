@@ -1,0 +1,128 @@
+ <!-- Beginning: Owl Image Slider -->
+ <!-- Owl Carousel JS -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
+
+ <!-- Owl Carousel CSS -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" />
+
+ <!-- Owl Carousel JS -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
+ <script src="../WDD330/js/main.js"></script>
+
+ <!-- Font Awesome 4.7.0 -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" />
+ <title>WDD 330 Portfolio Homepage</title>
+
+<!-- Card Slider -->
+<div class="slider owl-carousel">
+    <div class="item">
+      <img src="https://ilagazo.github.io/WDD330/assests/Mountains.jpg" alt="">
+      <div class="slider-caption">
+        <h4>TBD</h4>
+        <p>Project Card #1</p>
+      </div>
+    </div>
+    <div class="item">
+      <img src="https://ilagazo.github.io/WDD330/assests/Mountains.jpg" alt="">
+      <div class="slider-caption">
+        <h4>TBD</h4>
+        <p>Project Card #2</p>
+      </div>
+    </div>
+    <div class="item">
+      <img src="https://ilagazo.github.io/WDD330/assests/Mountains.jpg" alt="">
+      <div class="slider-caption">
+        <h4>TBD</h4>
+        <p>Project Card #3</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- JQUERY OWL -->
+  $(document).ready(function(){
+    $(".slider").owlCarousel({
+        center: true,
+        autoWidth: true,
+        loop: true,
+        nav: true,
+        navSpeed: 1500,
+        autoplay: true,
+        autoplaySpeed: 1500,
+        autoplayTimeout: 3000,
+    });
+
+    $(".owl-prev").html('<i class="fa fa-chevron-left"></i>');
+    $(".owl-next").html('<i class="fa fa-chevron-right"></i>');
+
+});
+
+<!-- CSS OWL -->
+/* Owl Carousel Module*/
+.slider {
+  padding: 100px 0;
+}
+
+.item img {
+  width: 200px;
+  height: auto;
+  transform: scale(.92);
+  transition: all ease 0.6s;
+}
+
+.item:hover img {
+  transform: scale(.85);
+}
+
+.slider-caption {
+  position: relative;
+  /* top: 35%;
+  left: 45px;
+  z-index: 999; */
+}
+
+.slider-caption h4 {
+  font-size: 58px;
+  color: #fff;
+}
+
+.slider-caption p {
+  font-size: 20px;
+  color: #fff;
+}
+
+.owl-item {
+  opacity: .4;
+  transition: all ease 0.6s;
+}
+
+.owl-item .slider-caption {
+  opacity: 0;
+  transform: translateY(-25px);
+}
+
+.owl-item.active.center {
+  opacity: 1;
+}
+
+.owl-item.active.center .slider-caption {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all ease 0.4s;
+}
+
+.owl-nav {
+  text-align: center;
+}
+
+.owl-nav button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  line-height: 42px i !important;
+  background-color: rgba(255, 255, 255, 0.3) i !important;
+  color: #fff im !important;
+  margin: 0 5px;
+  outline: none;
+}
+ <!-- End: Owl Image Slider -->
