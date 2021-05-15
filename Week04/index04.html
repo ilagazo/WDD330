@@ -30,32 +30,95 @@
   <div class="notes">
     <h2>JavaScript: Novice to Ninja, 2nd Edition & "THIS"</h2>
     <div class="notes-sub">
-      <h3> Ch8: Forms</h3>
+      <h3>Ch 8: Forms</h3>
       <ul>
-        <li>Reset buttons are generally considered poor for usability, as they are too easy to click and then wipe out all the data that’s been entered. So think very carefully before using one in a form</li>
+        <li>Reset buttons are generally considered poor for usability, as they are too easy to click and then wipe out
+          all the data that’s been entered. So think very carefully before using one in a form</li>
         <li> input type='password' is used to enter passwords or secret information. </li>
-        <li>Hidden fields can be created using input fields with type='hidden' . These are not displayed by the browser, but have a 'value' attribute that can contain information that is submitted with the form. 
-          They are often used to send information such as settings or information that the user has already provided. Note that the information in these fields is in no way secret, as it’s visible in the HTML, 
-          so shouldn’t be used for sensitive data. The value of a hidden input field can be changed using JavaScript in the same was as any other input field.</li>
-        <li>Another useful technique that can aid usability is to disable the submit button if there are errors on the form. If the submit button is disabled then no action is taken when it’s clicked. 
-          Most browsers will also display it in a lighter color to indicate that it cannot be clicked on. This prevents users from submitting a form containing any errors.A submit button can be disable 
+        <li>Hidden fields can be created using input fields with type='hidden' . These are not displayed by the browser,
+          but have a 'value' attribute that can contain information that is submitted with the form.
+          They are often used to send information such as settings or information that the user has already provided.
+          Note that the information in these fields is in no way secret, as it’s visible in the HTML,
+          so shouldn’t be used for sensitive data. The value of a hidden input field can be changed using JavaScript in
+          the same was as any other input field.</li>
+        <li>Another useful technique that can aid usability is to disable the submit button if there are errors on the
+          form. If the submit button is disabled then no action is taken when it’s clicked.
+          Most browsers will also display it in a lighter color to indicate that it cannot be clicked on. This prevents
+          users from submitting a form containing any errors.A submit button can be disable
           by added the disabled attribute to the input element:</li>
+      </ul>
+    </div>
+    <div class="notes-sub">
+      <h3>Ch 12: Object-Oriented Programming in JavaScript</h3>
+      <ul>
+        <li>There are three main concepts in OOP: encapsulation, polymorphism and inheritance.</li>
+        <li>Encapsualtion: the inner workings are kept hidden inside the object and only the essential functionalities
+          are exposed to the end user, such as the 'on' button. In OOP, this involves keeping all
+          the programming logic inside an object and making methods available to implement the functionality, without
+          the outside world needing to know how it’s done.</li>
+        <li>Polymorphism: the same process can be used for different objects. In OOP, this means various objects can
+          share the same method, but also have the ability to override shared methods with a more specific
+          implementation.</li>
+        <li>Inheritence: taking the features of one object then adding some new features. In OOP, this means we can take
+          an object that already exists and inherit all its properties and methods. We can then improve on its
+          functionality by adding new properties and methods.</li>
+        <li>But what if you want to augment the class with extra methods and properties after it has been created? It
+          turns out that you can still do this using the prototype property of the class.
+          This is particularly useful if you don't have access to the class declaration, but still want to add
+          properties and methods to the class.</li>
+      </ul>
+    </div>
+    <div class="notes-sub">
+      <h3>Ch 15: Modern Javascript</h3>
+      <ul>
+        <li>Library: A library will abstract functionality into easier-to-use functions and methods. These can then be
+          used to complete common tasks without having to use lots of repetitive code.</li>
+        <li>Other libraries are jQuery, Underscore, Lodash</li>
+        <li>Advantage of Libraries: A big advantage of utilizing a popular library is that it will be used by lots of
+          people and thoroughly tested.</li>
+        <li>Disadvantage: Library can also make your code slower than using plain vanilla JavaScript</li>
+        <li>Default Exports: Having more than one default export will result in a syntax error</li>
+        <li>MVC Frameworks: Model-View-Controller (MVC) is a design pattern that’s been used for a long time in
+          server-side languages. It’s a common way of designing software, and used by server-side frameworks such as
+          Ruby On Rails and Django.
+          In recent years it has been used in JavaScript code to make it easier to organize large-scale web
+          applications.</li>
+        <li>Models: Models are objects that implement the functionality for creating, reading, updating and deleting
+          (known as CRUD tasks) specific pieces of information about the application, as well as any other associated
+          logic and behavior. In a to-do list application,
+          for example, there would be a task model providing methods to access all the information about the tasks such
+          as names, due dates and completed tasks. This data will often be stored in a database or some other container.
+        </li>
+        <li>Views: Views provide a visual representation of the model showing all the relevant information. In a web
+          application, this would be the HTML displayed on a web page. Views also provide a way for users to interact
+          with an application, usually via forms. In a to-do
+          list application, the views would display the tasks as an HTML list with checkboxes that a user could tick to
+          say a task had been completed.</li>
+        <li>Controllers:Controllers link models and views together by communicating between them. They respond to events,
+          which are usually inputs from a user (entering some data into a form, for example), process the information,
+          then update the model and view accordingly.
+          In a to-do list application, the controller functions would respond to the event of a user clicking on a check
+          box and then inform the model that a task had been completed. The model would then update the information
+          about that task.</li>
       </ul>
     </div>
     <div class="notes-sub">
       <h3>Questions:</h3>
       <ul>
+        <li>What functions/methods are provided in jQuery?</li>
+        <li>What is Angular and how can I incorporate this MVC framework in my work?</li>
+        <li>How can I make forms more user-friendly and responsive using Bootstrap?</li>
       </ul>
     </div>
   </div>
-    <footer>
-      <p>Professional Networking Links:</p>
-      <div class="footer-links">
-        <a href="https://www.linkedin.com/in/ivanro-lagazo/">LinkedIn</a>
-        <a href="https://github.com/ilagazo">GitHub</a>
-        <a href="../WDD330/index.html">Portfolio</a>
-      </div>
-    </footer>
+  <footer>
+    <p>Professional Networking Links:</p>
+    <div class="footer-links">
+      <a href="https://www.linkedin.com/in/ivanro-lagazo/">LinkedIn</a>
+      <a href="https://github.com/ilagazo">GitHub</a>
+      <a href="../WDD330/index.html">Portfolio</a>
+    </div>
+  </footer>
 </body>
 
 </html>
