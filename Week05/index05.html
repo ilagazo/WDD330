@@ -30,24 +30,60 @@
   <div class="notes">
     <h2>JavaScript: Novice to Ninja, 2nd Edition & "THIS"</h2>
     <div class="notes-sub">
-      <h3>Object methods, "this"</h3>
+      <h3>Ch 10: Testing and Debugging</h3>
       <ul>
+        <li>Three types of errors: System, Programmer, and User</li>
+        <li>System error ― there’s a problem with the system or external devices with
+          which the program is interacting.</li>
+        <li>Programmer error ― the program contains incorrect syntax or faulty logic; it
+          could even be as simple as a typo.</li>
+        <li>User error ― the user has entered data incorrectly, which the program is
+          unable to handle.</li>
+        <li>Exceptions let us know what the error is.</li>
+        <li>Exceptions produce Stack traces. It is a bread crumb trail to the error</li>
+        <li>Warnings are given when there is an error but not enough of one tp crash the code</li>
+        <li>Strict mode is the norm for programming. To use, include this in first line: 'use strict'; </li>
+        <li>Linting Tools such as JS Lint, JS Hint, ES Lint help with coding convention</li>
+        <li>Feature Detection: Feature detection guarantees that the method is only
+          called if it actually exists and fails gracefully, without any exceptions being
+          thrown, if the method doesn’t exist.</li>
+        <li>Feature Detection can also detect browser support.</li>
+        <li>Alert() can be used for debugging with breakpoints</li>
+        <li>"debugger" command is useful! Learn to use it better.</li>
+        <li>Error Objects: We can create objects to show different types of errors.</li>
+        <li>Types of Error Objects: Error(), EvalError(), RangeError(), ReferenceError(), SyntaxError(), TypeError(),
+          URIError(), InternalError()</li>
+        <li>Throwing Exceptions: Use "throw" to highlight problems in code. It wills top the execution.</li>
+        <li>Best practice is to throw an error object. "throw new Error('...')</li>
+        <li>Try, catch, AND finally: Used to catch any errors but not halt the program. It will let us know in
+          the background what the exceptions are.
+        </li>
+        <li>Red-Green-Refactor:1. Write tests (that initially fail)
+          2. Write code to pass the tests
+          3. Refactor the code
+          4. Test refactored code
+          5. Write more tests for new features </li>
+        <li>Testing Frameworks: They provide methods that make creating tests easier.</li>
+        <li>Jest is a testing framework developed by Facebook tp do such things.</li>
       </ul>
     </div>
     <div class="notes-sub">
       <h3>Questions:</h3>
       <ul>
+        <li>Out of all these types of way to test, which is the best?</li>
+        <li>I use try-catch statments all the time at work. What does "finally" do?</li>
+        <li>Jest vs Selenium? I've never heard of Jest and I feel like Selenium is the industry standard.</li>
       </ul>
     </div>
   </div>
-    <footer>
-      <p>Professional Networking Links:</p>
-      <div class="footer-links">
-        <a href="https://www.linkedin.com/in/ivanro-lagazo/">LinkedIn</a>
-        <a href="https://github.com/ilagazo">GitHub</a>
-        <a href="../WDD330/index.html">Portfolio</a>
-      </div>
-    </footer>
+  <footer>
+    <p>Professional Networking Links:</p>
+    <div class="footer-links">
+      <a href="https://www.linkedin.com/in/ivanro-lagazo/">LinkedIn</a>
+      <a href="https://github.com/ilagazo">GitHub</a>
+      <a href="../WDD330/index.html">Portfolio</a>
+    </div>
+  </footer>
 </body>
 
 </html>
