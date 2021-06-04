@@ -64,7 +64,43 @@
     <div class="notes-sub">
       <h3>Ch 13: AJAX</h3>
       <ul>
-        <li></li>
+        <li>Ajax is a technique that allows web pages to communicate asynchronously with a server, and it dynamically updates web pages without reloading.
+          This enables data to be sent and received in the background, as well as portions of a page to be updated in response to user events, while the rest of the program continues to run.</li>
+        <li>Ajax allows JavaScript to request resources from a server on behalf of the client. The resources requested are usually JSON data or small fragments of text or HTML rather than a whole web page.</li>
+        <li>An application programming interface (API) is a collection of methods that allows external access to another program or service. Many websites allow controlled access to their data via public APIs. 
+          This means that developers are able to interact with the data and create mashups of third-party services.</li>
+        <li>FETCH API is the living standard for requesting and sending data asynchronously across a network</li>
+        <li>The Fetch API provides a global fetch() method that only has one mandatory argument, which is the URL of the resource you wish to fetch.</li>
+        <li>Fetch API has a response interface. Response objects have a number of properties and methods that allow us to process the response effectively. Some properties are .headers, .url, .redirected, .type</li>
+        <li>Redirect() method can be used to redirect to another URL in the response interface. Note: no browser supports this currently</li>
+        <li>The text() method takes a stream of text from the response, reads it to completion and then returns a promise that resolves to a USVSting object that can be treated as a string in JavaScript.</li>
+        <li>The blob() method is used to read a file of raw data, such as an image or a spreadsheet. Once it has read the whole file, it returns a promise that resolves with a blob object.</li>
+        <li>JSON is probably the most common format for AJAX responses. The json() method is used to deal with these by transforming a stream of JSON data into a promise that resolves to a JavaScript object.</li>
+        <li>We can also create our own response objects . "const response = new Response(...). These can be useful to use if you are creating an API that needs to send a response, or if you need to send a dummy response for testing purposes.</li>
+        <li>FETCH API also has a Request interface. We can get more fine-grained control over the request being made by providing a Request object as an argument. </li>
+        <li>Request objects are created using the Request() constructor, and include the following properties: url, method, headers, mode, cache, credentials, redirect</li>
+        <li>FETCH API has a Headers Interface. HTTP headers are used to pass on any additional information about a request or response. Typical information contained in headers includes the file-type of the resource, 
+          cookie information, authentication information and when the resource was last modified.The Fetch API introduced a Headers interface, which can be used to create a Headers object, which can then be added as a property of Request and Response objects.</li>
+        <li>A new Headers instance is created using a constructor function: "const headers = new Headers();"</li>
+        <li>Header's object has the following properties and methods: has(), get(), set(), append(), delete(), and so forth.</li>
+        <li>FETCH API also has a FormData interface which makes it easier to submit information in forms using Ajax</li>
+        <li>A FormData instance is created using a constructor function: "const data = new FormData();"</li>
+        <li>NOTE: the Fetch API is still in development but current versions are supported in most major browsers. jQuery is an alternative, because it has a built-in method called ajax() that functions similar to the Fetch API.</li>
+      </ul>
+    </div>
+    <div class="notes-sub">
+      <h3>FETCH API Basic Format</h3>
+      <ul>
+        <li>fetch('https://example.com/data')</li>
+        <li>.then( // code that handles the response )</li>
+        <li>.catch( // code that runs if the server returns an error )</li>
+      </ul>
+    </div>
+    <div class="notes-sub">
+      <h3>FETCH API Examples</h3>
+      <ul>
+        <li>Putting all the Interfaces Together: https://www.sitepoint.com/premium/books/javascript-novice-to-ninja-2nd-edition/read/13/k01nwvnz?fromShare=true</li>
+        <li>EventHandler: https://www.sitepoint.com/premium/books/javascript-novice-to-ninja-2nd-edition/read/13/k01nwvoc?fromShare=true</li>
       </ul>
     </div>
     <div class="notes-sub">
@@ -72,6 +108,8 @@
       <ol>
         <li>What is the industry standard when it comes to this advanced knowledge of functions?</li>
         <li>Does my current company use these techniques in their code?If so, why? If not, why?</li>
+        <li>Which is easier and GUI friendly: ajax() or the Fetch API?</li>
+        <li>What are some more professional examples of the Fetch API?</li>
       </ol>
     </div>
   </div>
