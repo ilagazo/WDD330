@@ -6,15 +6,14 @@
 
 body {
   text-align: center;
-  background-color: #333333;
+  background-color: #222831;
   /* font-family: 'Titillium Web', sans-serif; */
-  color: #ffffff;
+  color: #eeeeee;
   letter-spacing: 1px;
 }
 
 header {
-  background-color: #ffffff;
-  color: #333;
+  color: #eeeeee;
 }
 
 .menu {
@@ -22,8 +21,7 @@ header {
   padding: 10px;
   text-align: center;
   list-style-position: inside;
-  background-color: #706c61;
-  color: #ffffff;
+  background-color: #393e46;
   border-radius: 20px;
 }
 
@@ -34,7 +32,7 @@ li > a {
 }
 
 li > a:hover {
-  color: #e1f4f3;
+  color: #00adb5;
   text-decoration: none;
 }
 
@@ -49,7 +47,6 @@ li > a:hover {
 }
 
 .bar {
-  color: #fff;
   letter-spacing: 1px;
   font-weight: 500;
   font-size: 16px;
@@ -157,7 +154,7 @@ abbr {
   position: relative;
   width: 320px;
   height: 420px;
-  background-color: lightgrey;
+  background-color: #393e46;
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -180,12 +177,12 @@ abbr {
 }
 
 .card::after {
-  content: 'WDD330';
+  content: 'LEARN';
   position: absolute;
   bottom: 0;
   left: 0;
   font-weight: 600;
-  font-size: 8em;
+  font-size: 6em;
   color: rgba(0, 0, 0, 0.1);
 }
 
@@ -222,7 +219,7 @@ abbr {
 
 .card .label h3 {
   font-size: 18px;
-  color: #fff;
+  color: #eeeeee;
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -230,7 +227,7 @@ abbr {
 
 .card .label .content_text {
   font-size: 24px;
-  color: #fff;
+  color: #eeeeee;
   font-weight: 500;
   letter-spacing: 1px;
 }
@@ -241,9 +238,9 @@ abbr {
   opacity: 0;
   padding: 10px 30px;
   margin-top: 15px;
-  color: #fff;
+  color: #eeeeee;
   text-decoration: none;
-  background: #2196f3;
+  background: #3cc3db;
   border-radius: 30px;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -253,23 +250,6 @@ abbr {
 .card:hover .label .card_button {
   top: 0;
   opacity: 1;
-}
-
-footer {
-  background-color: #706c61;
-  text-align: center;
-  padding: 10px;
-  color: #fff;
-}
-
-.footer-links > a {
-  text-decoration: none;
-  padding: 5px;
-  color: #ffffff;
-}
-
-.footer-links > a:hover {
-  color: #e1f4f3;
 }
 
 /* Contact Card */
@@ -343,4 +323,22 @@ footer {
       max-width: 300px;
       margin: 10px 0;
     }
+  }
+
+  /* Notes Footer */
+  footer {
+    background-color: #eeeeee;
+    text-align: center;
+    padding: 10px;
+    color: #222831;
+  }
+  
+  .footer-links > a {
+    text-decoration: none;
+    padding: 5px;
+    color: #222831;
+  }
+  
+  .footer-links > a:hover {
+    color: #00adb5;
   }
