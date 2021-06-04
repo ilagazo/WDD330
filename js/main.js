@@ -3,7 +3,8 @@ var menuArray = [
     {label: "Week 02 Notes", url:"../WDD330/Week02/index02.html"},
     {label: "Week 03 Notes", url:"../WDD330/Week03/index03.html"},
     {label: "Week 04 Notes", url:"../WDD330/Week04/index04.html"},
-    {label: "Week 05 Notes", url:"../WDD330/Week05/index05.html"}
+    {label: "Week 05 Notes", url:"../WDD330/Week05/index05.html"},
+    {label: "Week 07 Notes", url:"../WDD330/Week07/index07.html"}
 ]
 
 function dynamicTableLoader() {

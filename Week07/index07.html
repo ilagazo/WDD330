@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="../WDD330/css/main.css"> -->
+  <link rel="stylesheet" type="text/css" href="https://ilagazo.github.io/WDD330/css/notes.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@900&display=swap" rel="stylesheet">
+  <title>Week 07 Notes</title>
+</head>
+
+<body>
+  <header>
+    <h1>Week 07 Notes</h1>
+  </header>
+  <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"></script>
+
+  <div class="notes">
+    <h2>JavaScript: Novice to Ninja, 2nd Edition & "THIS"</h2>
+    <div class="notes-sub">
+      <h3>Ch 11: Further Functions</h3>
+      <ul>
+        <li>functions are first-class objects, which means they can be passed around in the same way as every other value. 
+          They can have their own properties and methods, as well as accepting other functions as parameters and being returned by other functions. This makes them a very flexible tool to work with in JavaScript</li>
+        <li>All functions share some built-in methods: length() and call()</li>
+        <li>Functions can have custom properties. For example: square.properties = "This is a customer property description"</li>
+        <li>Custom properties provide Memoization. Memoization is a useful feature that provides result caching</li>
+        <li>An Immediately Invoked Function Expression– or IIFE – (pronounced 'iffy') is an anonymous function that, as the name suggests, is invoked as soon as it’s defined.</li>
+        <li>IIFEs are a useful way of performing a task while keeping any variables wrapped up within the scope of the function. This means the global namespace is not polluted with lots of variable names.</li>
+        <li>IIFEs are useful for temp variable handling and initialization code (code that is there to initialize and won't be used anywhere again)</li>
+        <li>The recommended way of using STRICT MODE is to place it inside an IIFE, because other people may not be using STRICT MODE. This ensures that only our code is in strict mode</li>
+        <li>IIFEs can be used to self-contain blocks of code to ensure that they don't mess with each other and for testing purposes</li>
+        <li>JS functions can also define and rewrite themselves by calling themselves inside the function. Note that previously set properties of a function will be lost if this is done.</li>
+        <li>A recursive function is one that invokes itself until a certain condition is met. It’s a useful tool to use when iterative processes are involved. For example a factorial function.</li>
+        <li>A PROMISE represents the future result of an asynchronous operation.</li>
+        <li>A promise is created using a constructor function. This takes a function called an EXECUTOR as an argument. The executor initializes the promise and starts the asynchronous operation. 
+          It also accepts two functions as arguments: the resolve() function is called if the operation is successful, and the reject() function is called if the operation fails.</li>
+        <li>Pure Functions:A key aspect of functional programming is its use of pure functions. A pure function is a function that adheres to the following rules:
+
+          1) The return value of a pure function should only depend on the values provided as arguments. It doesn't rely on values from somewhere else in the program.
+          
+          2) There are no side-effects. A pure function doesn't change any values or data elsewhere in the program. It only makes non-destructive data transformations and returns new values, rather than altering any of the underlying data.
+          
+          3) Referential transparency. Given the same arguments, a pure function will always return the same result.
+          In order to follow these rules, any pure function must have:
+
+          At least one argument; otherwise the return value must depend on something other than the arguments of the function, breaking the first rule
+          A return value; otherwise there’s no point in the function (unless it has changed something else in the program – in which case, it’s broken the 'no side-effects' rule).</li>
+        <li>HIGHER-ORDER FUNCTIONS are functions that accept another function as an argument, or return another function as a result, or both.</li>
+      </ul>
+    </div>
+    <div class="notes-sub">
+      <h3>Ch 13: AJAX</h3>
+      <ul>
+        <li></li>
+      </ul>
+    </div>
+    <div class="notes-sub">
+      <h3>Questions</h3>
+      <ol>
+        <li>What is the industry standard when it comes to this advanced knowledge of functions?</li>
+        <li>Does my current company use these techniques in their code?If so, why? If not, why?</li>
+      </ol>
+    </div>
+  </div>
+
+  <footer>
+    <p>Professional Networking Links:</p>
+    <div class="footer-links">
+      <a href="https://www.linkedin.com/in/ivanro-lagazo/">LinkedIn</a>
+      <a href="https://github.com/ilagazo">GitHub</a>
+      <a href="../WDD330/index.html">Portfolio</a>
+    </div>
+  </footer>
+</body>
+
+</html>
