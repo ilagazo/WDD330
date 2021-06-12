@@ -110,7 +110,7 @@ p {
 
 /*===== HOME =====*/
 .home{
-  background-color: var(--first-color);
+  /* background-color: var(--first-color); */
   overflow: hidden;
 }
 
@@ -135,7 +135,7 @@ p {
 }
 
 .home__data{
-  color: var(--white-color);
+  /* color: var(--white-color); */
 }
 
 .home__title{

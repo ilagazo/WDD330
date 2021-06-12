@@ -268,7 +268,6 @@ abbr {
 /* Contact Card */
   /* Contact Info */
   .contact-info {
-    background-color: #222831;
     display: flex;
     width: 100%;
     align-items: center;
@@ -277,7 +276,6 @@ abbr {
   }
   
   .contact-card {
-    /* background: #32e0c4; */
     padding: 0 30px;
     margin: 0 30px;
     width: calc(33% - 30px);
@@ -353,5 +351,19 @@ abbr {
   }
   
   .footer-links > a:hover {
+    color: #00adb5;
+  }
+
+  /* Toggle Light Mode Button */
+  .light-mode {
+    background-color: #eeeeee;
+    color: #222831;
+  }
+
+  #toggle-btn {
+    cursor: pointer;
+  }
+
+  #toggle-btn:hover {
     color: #00adb5;
   }
