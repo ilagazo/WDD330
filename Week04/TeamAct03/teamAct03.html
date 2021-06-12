@@ -1,76 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tic Tac Toe</title>
-</head>
-<style>
+  </head>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      background-color: #222831;
+      color: #eeeeee;
+    }
+
     h1 {
-        text-align: center
+      text-align: center;
     }
+
+    p {
+        text-align: center;
+    }
+
+    p > a {
+        color: #eeeeee;
+        text-decoration: underline;
+    }
+
     table {
-        margin: 0 auto;
+      margin: 0 auto;
     }
+
     td {
-        width: 16px;
-        height: 16px;
-        padding: .5em;
-        border: 1px solid #000000;
-        cursor: pointer;
+      width: 100px;
+      height: 100px;
+      padding: 0.5em;
+      border: 1px solid #000000;
+      cursor: pointer;
+      text-align: center;
+      font-size: 100px;
+      border-color: aqua;
+      box-shadow: 0 5px 20px #eeeeee, 0 5px 20px #00adb5;
     }
-</style>
-<body>
-    <h1>Tic Tac Toe</h1>
+
+    .tl-corner {
+      border-top: 0px;
+      border-left: 0px;
+    }
+    
+    .top-mid {
+        border-top: 0;
+    }
+
+    .tr-corner {
+        border-right: 0;
+        border-top: 0px;
+    }
+
+    .mid-left {
+        border-left: 0;
+    }
+
+    .mid-right {
+        border-right: 0;
+    }
+
+    .bot-left {
+        border-left: 0;
+        border-bottom: 0;
+    }
+
+    .bot-right {
+        border-right: 0;
+        border-bottom: 0;
+    }
+
+    .bot-mid {
+        border-bottom: 0;
+    }
+
+    .button-sect {
+      text-align: center;
+      margin: auto;
+      padding: 10px;
+    }
+  </style>
+  <body>
+    <h1>Tic-Tac-Toe</h1>
+    <p>Never played Tic-Tac-Toe? Read the Rules Here <a href="https://www.exploratorium.edu/brain_explorer/tictactoe.html">Official Rules</a></p>
     <table class="board">
-         <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-         </tr>
-         <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
+      <tr>
+        <td class="tl-corner"></td>
+        <td class="top-mid"></td>
+        <td class="tr-corner"></td>
+      </tr>
+      <tr>
+        <td class="mid-left"></td>
+        <td></td>
+        <td class="mid-right"></td>
+      </tr>
+      <tr>
+        <td class="bot-left"></td>
+        <td class="bot-mid"></td>
+        <td class="bot-right"></td>
+      </tr>
     </table>
-    <button id="reset">Reset</button>
+    <div class="button-sect">
+      <button id="reset">Reset</button>
+    </div>
 
     <script>
-        const td = document.getElementsByTagName("td");
-        for(let i = 0; i < td.length; i++) {
-            td[i].addEventListener('click', myFunction, false);
-            var turn = 0; 
-        
+      const td = document.getElementsByTagName("td");
+      for (let i = 0; i < td.length; i++) {
+        td[i].addEventListener("click", myFunction, false);
+        var turn = 0;
+
         function myFunction() {
-            
-            if(turn % 2 === 0){
-                td[i].innerHTML = "x";
-                turn++;
-                console.log(turn);
-            }
-            else{
-                td[i].innerHTML = "o";
-                turn++;
-                console.log(turn);
-            }
-            }
-            
+          if (turn % 2 === 0) {
+            td[i].innerHTML = "x";
+            turn++;
+            console.log(turn);
+          } else {
+            td[i].innerHTML = "o";
+            turn++;
+            console.log(turn);
+          }
         }
-        document.getElementById("reset").addEventListener('click', reset, false);
-            
-        function reset() {
-            for(let i = 0; i < td.length; i++) {
-                td[i].innerHTML = " ";
-            }
+      }
+      document.getElementById("reset").addEventListener("click", reset, false);
+
+      function reset() {
+        for (let i = 0; i < td.length; i++) {
+          td[i].innerHTML = " ";
         }
-       
+      }
     </script>
-</body>
+  </body>
 </html>

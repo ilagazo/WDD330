@@ -87,9 +87,9 @@ p {
     cursor: pointer;
 }
 
-.nav_item {
+/* .nav_item {
     margin-bottom: 2rem;
-}
+} */
 
 .nav_close, .nav_link, .nav_logo, .nav_toggle {
     color: var(--white-color);

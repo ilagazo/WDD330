@@ -33,7 +33,7 @@
   </head>
 
   <body onload="dynamicTableLoader()">
-    <!-- Homepage Lander Module -->
+    <!-- Homepage Lander Module & Navbar -->
     <header class="l-header">
       <nav class="nav bd-grid">
         <div class="nav_logo">
@@ -51,10 +51,13 @@
 
           <ul class="nav_list">
             <li class="nav_item">
-              <a href="#about" class="nav_link">Skills</a>
+              <a href="#about" class="nav_link">About Me</a>
             </li>
             <li class="nav_item">
-              <a href="../Pages/products_cat.html" class="nav_link">About Me</a>
+              <a href="#skills" class="nav_link">Skills</a>
+            </li>
+            <li class="nav_item">
+              <a href="#project" class="nav_link">Projects</a>
             </li>
             <li class="nav_item">
               <a href="#contact" class="nav_link">Contact</a>
@@ -92,14 +95,20 @@
             </h1>
             <p class="home__description">
               Discover my passion and my dreams<br/>to learn and achieve!</p>
-            <a href="../Pages/products_cat.html" class="home__button">Get Started</a>
+            <a href="#about" class="home__button">Get Started</a>
           </div>
         </div>
       </section>
     </main>
 
+    <!-- About Me Section -->
+    <div id="about" class="about-me">
+      <h2>Hi, I'm Ivanro</h2>
+      <p>I've always wanted to change the world and I've found that through software engineering, I am capable of doing so.</p>
+    </div>
+
     <!-- Skills Bar Slider -->
-    <h2>Skills</h2>
+    <h2 id="skills">Developer Knowledge</h2>
     <div class="slider-wrap">
       <div class="bar">
         <h3>HTML/HTML5 <abbr>90%</abbr></h3>
@@ -126,16 +135,16 @@
         <span></span>
       </div>
     </div>
-    <!-- Menu -->
-    <div class="menu">
+    <!-- WDD330 Notes Section -->
+    <div class="notes-section">
       <h3>WDD 330 Class Notes</h3>
       <ol id="arrayLink"></ol>
     </div>
     <!-- Project Cards -->
-    <div class="card_container">
+    <div id="project" class="card_container">
       <div class="card">
         <div class="img-container">
-          <img src="../WDD330/assests/ToDoList.png" alt="To Do List Project" />
+          <img src="../WDD330/assests/SVG/liste.svg" alt="To Do List Project" width="100px"/>
         </div>
         <div class="label">
           <h3>Project 1</h3>
@@ -159,18 +168,18 @@
       </div>
       <div class="card">
         <div class="img-container">
-          <img src="../WDD330/assests/Mountains.jpg" alt="Mountains" />
+          <img src="../WDD330/assests/SVG/tic-tac-toe.svg" alt="tic-tac-toe Project" width="100px"/>
         </div>
         <div class="label">
           <h3>Project 3</h3>
           <h2 class="content_text">Tic Tac Toe</h2>
-          <a href="#" class="card_button">View</a>
+          <a href="../WDD330/Week04/TeamAct03/teamAct03.html" class="card_button">View</a>
         </div>
       </div>
     </div>
 
     <!-- Contact Section -->
-    <div class="contact-info">
+    <div id="contact" class="contact-info">
       <div class="contact-card">
         <i class="card-icon far fa-envelope"></i>
         <p>ivanro.lagazo@gmail.com</p>

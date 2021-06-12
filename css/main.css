@@ -19,13 +19,12 @@ header {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.menu {
+.notes-section {
   margin: 10px;
   padding: 10px;
   text-align: center;
   list-style-position: inside;
-  background-color: #393e46;
-  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 li > a {
@@ -39,8 +38,17 @@ li > a:hover {
   text-decoration: none;
 }
 
+/* About Me */
+.about-me {
+  margin: 10px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+
+/* Skills Bar */
 .slider-wrap {
-  max-width: 60%;
+  max-width: 50%;
   margin: auto;
   text-align: left;
 }
@@ -63,7 +71,7 @@ li > a:hover {
   position: relative;
   display: inline-block;
   width: 100%;
-  height: 25px;
+  height: 10px;
   background: #000;
   border-radius: 50px;
 }
@@ -71,11 +79,11 @@ li > a:hover {
 .bar > span::before {
   position: absolute;
   content: "";
-  top: 6px;
+  top: 3.5px;
   left: 5px;
   width: 80%;
-  height: 50%;
-  background: linear-gradient(to left, #ff0057, #ffeb3b);
+  height: 25%;
+  background: linear-gradient(to left, #00adb5, #eeeeee);
   border-radius: 50px;
   animation: bar 4s ease;
 }
@@ -106,18 +114,19 @@ li > a:hover {
 }
 
 abbr {
+  color: #000;
   width: 50px;
   display: inline-block;
-  height: 35px;
+  height: 25px;
   border-radius: 50px;
   text-align: center;
   font-size: 16px;
-  line-height: 35px;
+  line-height: 25px;
   position: absolute;
-  top: 34px;
+  top: 44px;
   z-index: 1;
-  background: linear-gradient(to left, #ff0057, #ffeb3b);
-  box-shadow: 0 5px 20px #ff0057, 0 5px 20px #ffeb3b;
+  background: linear-gradient(to left, #00adb5, #eeeeee);
+  box-shadow: 0 5px 20px #eeeeee, 0 5px 20px #00adb5;
   animation: count 4s ease;
 }
 @keyframes count {
@@ -145,6 +154,7 @@ abbr {
 .bar:nth-child(6) abbr {
   left: 70%;
 }
+/* End of Skills */
 
 /* Cards */
 .card_container {
