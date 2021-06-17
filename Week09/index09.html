@@ -46,7 +46,53 @@
     <div class="notes-sub">
       <h3>Ch 14: HTML5 APIs</h3>
       <ul>
+        <li>HTML5 Web Storage: The Web Storage API provides a key-value store on the client’s computer that is
+          similar to using cookies but has fewer restrictions, more storage capacity, and is
+          generally easier to use. This makes it perfect for storing information about users,
+          as well as storing application-specific information that can then be used during
+          future sessions.</li>
+        <li>If Web storage is not supported by the browser then the window object has the "localStorage" property</li>
+        <li>There is also sessionStorage, which works the same as a php session</li>
+        <li>Every time a value is saved to localStorage, a storage event is fired.</li>
+        <li>We can use JSON.stringify() to store any JS object in local storage</li>
+        <li>Geolocation API: used to obtain the geographical position of the device.
+          This means it can be used to find the user’s exact location, then link to nearby
+          places or measure the speed at which the user is moving. This information can
+          then be used to filter data based on the user’s location or speed and direction of
+          travel. An example of this might be a search function that returns results based on
+          your location. Because of privacy concerns, permission to use this has to be
+          granted by the user first.</li>
+        <li>To use this API, we use the navigator object in combination with the getCurrentPosition() method</li>
+        <li>For example: "navigator.geolocation.getCurrentPosition(youAreHere);"</li>
+        <li>youAreHere is a position object with a coords property with a latitude and longitude</li>
+        <li></li>
       </ul>
+    </div>
+    <div class="notes-sub">
+      <h3>Web Storage API Crucial Differences</h3>
+      <ul>
+        <li>Information stored is not shared with the server on every request.</li>
+        <li>Information is available in multiple windows of the browser (but only if the
+          domain is the same).</li>
+        <li>Storage capacity limit is much larger than the 4KB limit for cookies</li>
+        <li>Any data stored does not automatically expire as it does with cookies. This
+          potentially makes cookies a better choice for something like showing a popup
+          once a day.</li>
+        <li>Web Workers:Web workers allow processes to be run
+          in the background, adding support for concurrency in JavaScript. The idea is that
+          any processes that could take a long time are carried out in the background, so a
+          website will continue to function without fear of the dreaded “script has become
+          unresponsive” message that occurs when a script runs for too long,</li>
+        <li>To use, use the Worker() constructor function to create a new worker. (const worker = new Worker('task.js');)</li>
+        <li>Websockets:Websocket is a new protocol that allows two-way communication with a server –
+          also known as push messaging. This means that a connection is kept open and
+          responses are ‘pushed’ to the client as soon as they are received.</li>
+        <li>Notifications API: The Notification API allows you to show messages using the system’s
+          notifications. This is usually a popup in the corner of the screen, but it changes
+          depending on the operating system. An advantage of using the system notification
+          is that they will still be displayed even if the web page that calls them isn’t the
+          current tab.</li>
+        </ul>
     </div>
     <div class="notes-sub">
       <h3>Examples</h3>
@@ -58,6 +104,7 @@
       <h3>Questions</h3>
       <ol>
         <li>Is it preferred that animations be done through JS or CSS?</li>
+        <li>Is the Geolocation API used over other location tracking/providing APIs?</li>
       </ol>
     </div>
   </div>
