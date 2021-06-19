@@ -156,7 +156,7 @@ abbr {
 }
 /* End of Skills */
 
-/* Cards */
+/* Project Cards */
 .card_container {
   display: flex;
   flex-wrap: wrap;
@@ -264,9 +264,8 @@ abbr {
   top: 0;
   opacity: 1;
 }
-
+/* End of Project Cards */
 /* Contact Card */
-  /* Contact Info */
   .contact-info {
     display: flex;
     width: 100%;
@@ -284,14 +283,13 @@ abbr {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: #fff;
     cursor: pointer;
     border-radius: 50px;
   }
   
   .card-icon {
     font-size: 28px;
-    background: #ff6348;
+    background: #00adb5;
     width: 60px;
     height: 60px;
     text-align: center;
@@ -302,7 +300,6 @@ abbr {
   
   .contact-card:hover .card-icon {
     background: none;
-    color: #ff6348;
     transform: scale(1.6);
   }
   
@@ -317,7 +314,7 @@ abbr {
 
   .contact-card a {
     text-decoration: none;
-    color: #fff;
+    color: inherit;
   }
   
   .contact-card:hover p {
@@ -335,6 +332,7 @@ abbr {
       margin: 10px 0;
     }
   }
+  /* End of Contact Cards */
 
   /* Notes Footer */
   footer {
@@ -367,3 +365,4 @@ abbr {
   #toggle-btn:hover {
     color: #00adb5;
   }
+  /* End of Light Mode Toggle Button */
