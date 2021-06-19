@@ -17,8 +17,8 @@
             flex-flow: column wrap;
         }
         .service-container img {
-            width: 250px;
-            height: auto;
+            width: 200px;
+            height: 200px;
         }
         .item-container {
             display: flex;
@@ -32,6 +32,26 @@
 
         .image-container p {
             width: 320px;
+            font-size: 1.3em;
+        }
+        .item-container img {
+            margin: 20px;
+        }
+        .image-special {
+            display: flex;
+            flex-flow: row wrap;
+        }
+        .image-special img {
+            width: 175px;
+            height: 175px;
+            margin: 20px;
+        }
+        .info-special {
+            text-align: center;
+            font-size: 1.3em;
+            width: 50%;
+            margin: 10px;
+            padding: 10px;
         }
     </style>
   </head>
@@ -63,13 +83,23 @@
             <img src="../assests/delivery.png" alt="Delivery Service" />
             <div class="image-container">
                 <h3>Delivery</h3>
-                <p>This is more than a drop-off. We will </p>
+                <p>This is more than a drop-off. We will carefully and professionally deliver to your room of choice. </p>
             </div>
         </div>
     </div>
     <div class="service-container">
         <h2>Here's the Good News!</h2>
-        <p></p>
+        <div class="image-special">
+            <img src="../assests/delivery.png" alt="Delivery Service" />
+            <img src="../assests/trolley.png" alt="Haul-away Service" />
+            <img src="../assests/maintenance.png" alt="Installation Service" />
+        </div>
+        <div class="info-special">
+            You don't need to pay separate for delivery, haul-away, and installation. For $75, we'll do it all! Hassle free and peace of mind for you.
+        </div>
+        <div class="info-special">
+            Call us at (435) 512-2790 for questions, concerns, or special accomodations.
+        </div>
     </div>
   </body>
 </html>
