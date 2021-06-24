@@ -5,7 +5,9 @@ var menuArray = [
     {label: "Week 04 Notes", url:"../WDD330/Week04/index04.html"},
     {label: "Week 05 Notes", url:"../WDD330/Week05/index05.html"},
     {label: "Week 07 Notes", url:"../WDD330/Week07/index07.html"},
-    {label: "Week 08 Notes", url:"../WDD330/Week08/index08.html"}
+    {label: "Week 08 Notes", url:"../WDD330/Week08/index08.html"},
+    {label: "Week 09 Notes", url:"../WDD330/Week09/index09.html"},
+    {label: "Week 10 Notes", url:"../WDD330/Week10/index10.html"}
 ]
 
 function dynamicTableLoader() {
