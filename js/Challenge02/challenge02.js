@@ -52,6 +52,11 @@ function getQuery() {
     const googleURL = document.querySelector('#google-map-link-2');
     const query = document.querySelector('#searchQuery').value;
 
+    // TODO
+    if(query === "") {
+        currentLocation.textContent = "No Search Query Made."
+    }
+
     googleURL.href = '';
     googleURL.textContent = '';
 
@@ -62,7 +67,7 @@ function getQuery() {
 
         currentLocation.textContent = '';
         googleURL.href = `https://www.google.com/maps/search/${query}/@${lat},${long}`;
-        googleURL.textContent = `Latitude: ${lat} °, Longitude: ${long} °`;
+        googleURL.textContent = `Latitude: ${lat} °, Longitude: ${long} °, Search Query: ${query}`;
     }
 
     // Handles the errors that may occur

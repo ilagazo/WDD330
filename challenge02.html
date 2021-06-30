@@ -1,36 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/Challenge02/challenge02.css" />
     <title>Challenge 02: Geolocation API</title>
-</head>
+  </head>
 
-<body>
+  <body>
+    <!-- TODO -->
+    <nav>
+        <h1>Challenge02 Assignment</h1>
+        <div class="nav-links">
+            <a href="">API</a>
+            <a href="">JS Game</a>
+        </div>
+    </nav>
+
+    <div class="img-group">
+        <img src="/assests/geo.jpg" alt="Geolocation API Infographic">
+    </div>
+
+    <!-- Page Description -->
+    <div class="page-text">
+
+        <h2>What is this?</h2>
+        <p>This is part 1 of the Challenge 02 Project. This part will focus on the use of API knowledge, specifically the Geolocation API.</p>
+    </div>
+
     <!-- Simple Location Finder Section -->
-    <div>
-        <h2>Simple Location Finder</h2>
+    <div class="api_module">
+      <h3>Simple Location Finder</h3>
+      <p>Pressing this button will prompt for access to your location data. It will then display your coordinates and clicking on the link will
+        send you to Google Maps where your location is.</p>
+      <div class="button-group">
         <button id="requestLocation">Request Location</button>
+      </div>
+      <div class="output-group">
         <h3>Your Current Coordinates</h3>
         <p id="currentLocation"></p>
         <a id="google-map-link-1" target="_blank"></a>
+      </div>
     </div>
 
     <!-- Simple Map Search Query -->
-    <div>
-        <h3>Simple Map Search Query</h3>
-        <label for="searchQuery">What would you like to search for in your area?</label>
-        <input type="text" id="searchQuery" name="searchQuery" /> <br>
+    <div class="api_module">
+      <h3>Simple Map Search Query</h3>
+      <p>Search for something in your near you! For example if you search McDonald's, it will find all of the nearest McDonalds near you.</p>
+      <div class="text-group">
+        <label for="searchQuery"
+          >What would you like to search for in your area?</label>
+        <input type="text" id="searchQuery" name="searchQuery" /> <br />
+      </div>
+      <div class="button-group">
         <button id="requestQuery">Search</button>
+      </div>
+      <div class="output-group">
         <h3>Your Query</h3>
         <p id="queryLocation"></p>
         <a id="google-map-link-2" target="_blank"></a>
+      </div>
     </div>
 
     <!-- JS Script -->
-    <script src="../WDD330/js/Challenge02/challenge02.js"></script>
-</body>
-
+    <script src="/js/Challenge02/challenge02.js"></script>
+  </body>
 </html>

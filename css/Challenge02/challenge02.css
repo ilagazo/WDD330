@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("/assests/nature-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-text {
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 3px;
+}
+
+.img-group {
+  text-align: center;
+}
+
+.img-group img {
+  width: 400px;
+  height: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 5px;
+}
+
+.nav-links {
+  text-align: right;
+}
+
+.api_module {
+  display: flex;
+  flex-flow: column wrap;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  background-color: rgba(0, 0, 0, 0.8);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 3px;
+}
+
+.text-group {
+    padding: 10px;
+}
+
+.button-group {
+  padding: 10px;
+}
+
+.output-group {
+  padding: 10px;
+}
+
+.output-group a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.output-group a:hover {
+    color: #2978B5;
+}
