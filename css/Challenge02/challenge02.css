@@ -11,10 +11,39 @@ body {
   color: #fff;
 }
 
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.top-nav {
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.8);;
+  position: relative;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.top-nav #myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+.top-nav a {
+  color: #fff;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+  cursor: pointer;
+}
+
+/* Style the hamburger menu */
+.top-nav a.icon {
+  background: rgba(0, 0, 0, 0.8);
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* Add a grey background color on mouse-over */
+.top-nav a:hover {
+  /* cursor: default; */
 }
 
 .page-text {
@@ -72,3 +101,72 @@ nav {
 .output-group a:hover {
     color: #2978B5;
 }
+
+/* Contact Card */
+.contact-info {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.contact-card {
+  padding: 0 30px;
+  margin: 0 30px;
+  width: calc(33% - 30px);
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 50px;
+}
+
+.card-icon {
+  font-size: 28px;
+  background: #161616;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px !important;
+  border-radius: 50%;
+  transition: 0.3s linear;
+}
+
+.contact-card:hover .card-icon {
+  background: none;
+  transform: scale(1.6);
+}
+
+.contact-card p {
+  margin-top: 20px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  max-height: 0;
+  opacity: 0;
+  transition: 0.3s linear;
+}
+
+.contact-card a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.contact-card:hover p {
+  max-height: 40px;
+  opacity: 1;
+}
+
+@media screen and (max-width: 800px) {
+  .contact-info {
+    flex-direction: column;
+  }
+  .contact-card {
+    width: 100%;
+    max-width: 300px;
+    margin: 10px 0;
+  }
+}
+/* End of Contact Cards */
