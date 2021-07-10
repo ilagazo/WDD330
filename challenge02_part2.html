@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/Challenge02/challenge02_part2.css" />
+    <!--  ICONS  -->
+    <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+    <title>Challenge 02: JavaScript Game</title>
+</head>
+
+<body>
+    <!-- Top Navigation Menu -->
+    <div class="top-nav">
+        <a href="../WDD330/challenge02.html" class="active">Challenge 02 Project</a>
+        <!-- Navigation links (hidden by default) -->
+        <div id="myLinks">
+            <a href="../WDD330/challenge02.html">GeoAPI</a>
+            <a href="../WDD330/challenge02_part2.html">JS Game</a>
+        </div>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <div class="wrapper">
+        <h1>JavaScript pairs Game</h1>
+        <h3>Click any card to begin</h3>
+        <p><span id="seconds">00</span>:<span id="tens">00</span></p>
+        <p id="text"></p>
+        <div id="container"></div>
+    </div>
+
+     <!-- JS Script -->
+  <script src="/js/Challenge02/challenge02_part2.js"></script>
+</body>
+
+</html>
