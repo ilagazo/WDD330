@@ -8,6 +8,7 @@ function myFunction() {
     }
   }
 
+// Initialize Variables and Arrays needed for JS game
 var myCards = document.getElementById('container');
 var resultsArray = [];
 var counter = 0;
@@ -22,7 +23,12 @@ var images = [
   'elephant',
   'lion',
   'orca',
-  'penguin'
+  'penguin',
+  'platypus',
+  'turtle',
+  'dog',
+  'salmon',
+  'eagle'
 ];
 
  // Duplicate array
@@ -106,3 +112,9 @@ function startTimer () {
     appendSeconds.innerHTML = seconds;
   }
 }
+
+// Reset Button
+document.getElementById("reset").addEventListener("click", function() {
+    location.reload();
+    return false;
+  });
