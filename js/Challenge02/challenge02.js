@@ -52,7 +52,6 @@ function getQuery() {
     const googleURL = document.querySelector('#google-map-link-2');
     const query = document.querySelector('#searchQuery').value;
 
-    // TODO
     if(query === "") {
         currentLocation.textContent = "No Search Query Made."
     }

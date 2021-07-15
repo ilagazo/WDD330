@@ -30,18 +30,47 @@
         </a>
     </div>
     <!-- JS Game -->
-    <div class="wrapper">
-        <h1>JavaScript Game</h1>
-        <h3>Click any card to begin</h3>
-        <div class="description"><strong>Rules:</strong> These cards have paris of different animals and fish. Match the pairs to win and do it as fast as possible!</div>
-        <p><span id="seconds">00</span>:<span id="tens">00</span></p>
-        <p id="text"></p>
-        <div id="container"></div>
+    <div class="game-container">
+        <div class="description-rules">
+            <h1>JavaScript Game</h1>
+            <h3>Click any card to begin</h3>
+            <p><strong>Rules:</strong> These cards have paris of different animals and fish. Match the pairs to win and do
+            it as fast as possible!</p>
+            <p><span id="seconds">00</span>:<span id="tens">00</span></p>
+        </div>
+        <div class="card-container">
+            <p id="text"></p>
+            <div id="container"></div>
+        </div>
     </div>
     <button id="reset">Reset Game</button>
 
-     <!-- JS Script -->
-  <script src="../WDD330/js/Challenge02/challenge02_part2.js"></script>
+    <!-- Contact Section -->
+  <div id="contact" class="contact-info">
+    <div class="contact-card">
+      <i class="card-icon far fa-envelope"></i>
+      <p>ivanro.lagazo@gmail.com</p>
+    </div>
+    <div class="contact-card">
+      <i class="card-icon fas fa-phone"></i>
+      <p>(951)391-9320</p>
+    </div>
+    <div class="contact-card">
+      <a href="https://github.com/ilagazo">
+        <i class="card-icon fab fa-github"></i>
+        <p>My Repositories</p>
+      </a>
+    </div>
+    <div class="contact-card">
+      <a href="https://www.linkedin.com/in/ivanro-lagazo/">
+        <i class="card-icon fab fa-linkedin"></i>
+        <p>My Profile</p>
+      </a>
+    </div>
+  </div>
+
+    <!-- JS Script -->
+    <script src="../WDD330/js/Challenge02/challenge02_part2.js"></script>
 </body>
 
 </html>

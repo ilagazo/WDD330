@@ -1,4 +1,4 @@
-/* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+// Handles Hamburger menu functionality
 function myFunction() {
     var x = document.getElementById("myLinks");
     if (x.style.display === "block") {
@@ -85,6 +85,7 @@ var check = function(className) {
   },500);
 }
 
+//  If the user wins then display the time it took them
 var win = function () {
 
   if(counter === 5) {
@@ -93,6 +94,7 @@ var win = function () {
   }
 }
 
+// Handles the time function
 function startTimer () {
   tens++;
 
